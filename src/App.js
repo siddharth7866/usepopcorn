@@ -60,9 +60,9 @@ export default function App() {
 }
 
 function Main() {
+  const [isOpen1, setIsOpen1] = useState(true);
   const [movies, setMovies] = useState(tempMovieData);
   const [watched, setWatched] = useState(tempWatchedData);
-  const [isOpen1, setIsOpen1] = useState(true);
   const [isOpen2, setIsOpen2] = useState(true);
 
   const avgImdbRating = average(watched.map((movie) => movie.imdbRating));
